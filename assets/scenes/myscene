@@ -1,0 +1,13 @@
+# example scene
+
+[camera]
+position 10 0 25
+fov 70
+speed .1
+
+[meshes]
+cube 3 0 7 1     # mesh | x | y | z | resize factor
+pyramid 0 0 0 1
+
+[display]
+background_color 50 0 50    # r | g | b
