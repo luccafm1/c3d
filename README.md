@@ -114,17 +114,11 @@ c3d/
 
 ## Licensing
 
-The code is provided under both the MIT License and a Public Domain dedication as stated in the headers:
+The code is provided under the MIT License as stated in the headers:
 
 **MIT License:**
 ```
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software ...
-```
-
-**Public Domain (Unlicense):**
-```
-This is free and unencumbered software released into the public domain.
-...
 ```
 
 You are free to use, modify, and distribute C3D for any purpose.
