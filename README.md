@@ -55,6 +55,7 @@ c3d/
 │  | │  │  └─ diffuse.png
 |  └─ scenes/
 |     └─ myscene
+├─ Makefile
 ├─ README.md (this file)
 └─ LICENSE (MIT or Unlicense)
 ```
