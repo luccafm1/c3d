@@ -17,7 +17,7 @@ C3D provides a built-in interactive menu in load.h, which can be imported into y
 **Example:**
 ```
 assets/scenes/
-└─ myscene.scene
+└─ myscene
 
 assets/models/
 └─ mymodel/
@@ -25,7 +25,7 @@ assets/models/
    └─ diffuse.png
 ```
 
-In `myscene.scene`, you should follow the syntax:
+In `myscene`, you should follow the syntax:
 ```ini
 [camera]
 position 0 2 5
@@ -49,9 +49,12 @@ c3d/
 ├─ src/
 │  └─ main.c
 ├─ assets/
-│  ├─ some_model/   (example model file)
-│  │  │  ├─ main.obj
-│  │  │  └─ diffuse.png
+|  ├─ models/
+│  | ├─ some_model/   (example model file)
+│  | │  │  ├─ main.obj
+│  | │  │  └─ diffuse.png
+|  └─ scenes/
+|     └─ myscene
 ├─ README.md (this file)
 └─ LICENSE (MIT or Unlicense)
 ```
