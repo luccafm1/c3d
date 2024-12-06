@@ -1,6 +1,6 @@
 # C3D – A Lightweight 3D renderer for the Windows Terminal
 
-C3D is a proof-of-concept 3D rendering engine implemented entirely in C for the Windows console. It leverages the Windows API for console manipulation, uses `stb_image.h` for texture loading, and renders 3D objects directly into the terminal with some rudimentary rasterization techniques. 
+C3D is a proof-of-concept 3D rendering engine implemented entirely in C for the Windows console. It leverages the Windows API for console manipulation, uses `stb_image.h` for texture loading, and renders 3D objects directly into the terminal with some rudimentary rasterization techniques. `c3d.h` serves as a standalone together with `stb_image.h`.
 
 **Note:** This is an experimental engine. Performance, features, and stability are limited compared to mature 3D engines.
 
