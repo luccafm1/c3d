@@ -66,9 +66,7 @@ c3d/
   C3D relies on the Windows Console API, so it runs on Windows.
   
 - **Compiler:**  
-  A C compiler that supports C99 or later. Common choices:
-  - Microsoft Visual Studio (MSVC)
-  - MinGW/GCC
+  A C compiler that supports C99 or later.
   
 - **stb_image:**  
   The project includes `stb_image.h` (header-only library) for image loading.
