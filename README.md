@@ -28,15 +28,15 @@ assets/models/
 In `myscene`, you should follow the syntax:
 ```ini
 [camera]
-position 0 2 5
-fov 70
-speed 0.5
+position 0 2 5               # X | Y | Z
+fov 70            
+speed 0.5         
 
 [meshes]
-mymodel 0 0 0 1.0
+mymodel 0 0 0 1.0            # mesh | X | Y | Z | resize factor
 
 [display]
-background_color 30 30 30
+background_color 30 30 30    # R | G | B
 ```
 
 ## Directory Layout
