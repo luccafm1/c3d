@@ -1,24 +1,6 @@
 # example scene
 
 [camera]
-position 10 0 25
-fov 70
-speed .1
-
-[meshes]
-cube 3 0 7 1     # mesh | x | y | z | resize factor
-pyramid 0 0 0 1
-
-[display]
-background_color 50 0 50    # r | g | b
-
-[startup]
-
-[continuous]
-
-
-
-[camera]
 # sets the camera settings
 position 0 2 5               # X | Y | Z
 fov 70            
@@ -26,18 +8,16 @@ speed 0.05
 
 [meshes]
 # sets mesh positions in the world
-cube 3 0 7 1       # mesh | x | y | z | resize factor
-pyramid 0 0 0 1
+cube 3 0 7      1 1 1      # mesh | x | y | z | resize x | resize y | resize z
+pyramid 0 0 0   1 1 1
 
 [lights]
 # sets light positions in the world
--1.05 -1  0.5 255 0 0 1 1           # X | Y | Z | R | G | B | brightness | radius
--1.05 -1 -0.5 0 255 0 1 1
--1.05 -1 0.00 0 0 255 1 1
+1 0 3 255 0 0 0.4 10           # X | Y | Z | R | G | B | brightness | radius
 
 [display]
 # display settings
-background_color 30 30 30    # R | G | B
+background_color 64 64 128    # R | G | B
 
 #############
 # behaviors #
@@ -45,8 +25,8 @@ background_color 30 30 30    # R | G | B
 
 [startup]
 # behaviors that execute once, at the start of the render
-rotate cube Y 150
+rotate cube X 150
 
 [continuous]
 # behaviors that are executed every update call
-rotate pyramid Z .5
+rotate pyramid Z 0.1
