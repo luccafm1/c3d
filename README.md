@@ -181,9 +181,11 @@ my_model 0 0 0 1.0 1.0 1.0
 
 When you specify a “folder_name” under `[meshes]`, C3D looks for:
 ```
-assets/models/<folder_name>/main.obj
-assets/models/<folder_name>/diffuse.png
+assets/models/<folder_name>/any.obj   (required)
+assets/models/<folder_name>/any.png   (optional*)
+assets/models/<folder_name>/any.mtl   (optional)
 ```
+> though models can **technically** run without *.png* files, the resulting render may not be optimal.
 
 ### Display Section
 
