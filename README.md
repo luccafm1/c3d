@@ -1,9 +1,9 @@
 
 # C3D – A Lightweight 3D Renderer for the Windows Terminal
 
-**C3D** is a proof-of-concept 3D rendering engine implemented entirely in C for the Windows console. It leverages the Windows API for console manipulation, uses [`stb_image.h`](https://github.com/nothings/stb) for texture loading, and renders 3D objects directly in the terminal using a simple rasterizer.
+**C3D** is a proof-of-concept 3D rendering engine implemented entirely in C for the Windows console. We use the Windows API for console manipulation, [`stb_image.h`](https://github.com/nothings/stb) for texture loading, and finally render .OBJ files directly into the terminal using a simple rasterizer.
 
-> **Note**: This is an experimental software renderer. Bigger projects typically require hardware solutions like the ones provided by OpenGL. 
+> **Note**: This is only an experimental software renderer! Hardware solutions are typically faster and more efficient at rendering 3D scenes, so expect everything to run a bit slower than your typical OpenGL solution.
 
 ## Table of Contents
 
@@ -27,10 +27,10 @@
 
 ## Features
 
-- **Windows-only**: Relies on the Windows Console API for rasterization.
-- **Simple .OBJ Loading**: Quickly load models with optional `.mtl` materials.
-- **Texture Support**: Uses `stb_image.h` for loading `.png`, `.jpg`, etc.
-- **Scene Files**: Define camera, background color, lights, and behaviors in `.scene` files.
+- **Simple**: Open up the Windows Console, and you already have your entire working space!
+- **Light**: The whole of C3D is meant to be relatively cheap in terms of memory, barely any space is required to load it.
+- **Full .OBJ support**: C3D extends full support to `.obj` files with additional optional `.mtl` materials, as well as diffuse, specular and normal maps
+- **Scene Files**: More complex renders use the custom `.scene` format. Define camera, background color, lights, and continuous behaviors in these files.
 - **Built-in Menu**: Interactively load either a scene file (under `assets/scenes/`) or a single `.obj` folder (under `assets/models/`).
 
 ---
