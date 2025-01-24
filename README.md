@@ -3,7 +3,7 @@
 
 **C3D** is a proof-of-concept 3D rendering engine implemented entirely in C for the Windows console. We use the Windows API for console manipulation, [`stb_image.h`](https://github.com/nothings/stb) for texture loading, and finally render .OBJ files directly into the terminal using a simple rasterizer.
 
-> **Note**: This is only an experimental software renderer! Hardware solutions are typically faster and more efficient at rendering 3D scenes, so expect everything to run a bit slower than your typical OpenGL solution.
+> **Note**: This is only an experimental software renderer! Hardware solutions are typically faster and more efficient at rendering 3D scenes, so expect everything to run much slower than your typical OpenGL solution.
 
 ## Table of Contents
 
@@ -27,8 +27,8 @@
 
 ## Features
 
-- **Simple**: Open up the Windows Console, and you already have your entire working space!
-- **Light**: The whole of C3D is meant to be relatively cheap in terms of memory, barely any space is required to load it.
+- **Simple**: All of the workspace of C3D runs directly on a Windows Console.
+- **Light**: The whole of C3D's API is meant to be cheap in terms of memory, and so barely any space is required to load it. Any potato can run this!
 - **Full .OBJ support**: C3D extends full support to `.obj` files with additional optional `.mtl` materials, as well as diffuse, specular and normal maps
 - **Scene Files**: More complex renders use the custom `.scene` format. Define camera, background color, lights, and continuous behaviors in these files.
 - **Built-in Menu**: Interactively load either a scene file (under `assets/scenes/`) or a single `.obj` folder (under `assets/models/`).
@@ -298,7 +298,7 @@ This project is released under the [MIT License](LICENSE). In short:
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software ...
 ```
 
-You may use, modify, distribute, etc., for commercial or non-commercial purposes.
+You may freely use, modify, distribute, etc., for commercial or non-commercial purposes.
 
 ---
 
