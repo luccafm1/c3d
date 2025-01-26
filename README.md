@@ -3,7 +3,7 @@
 
 **C3D** is a C99+ 3D software-renderer pipeline built for the Windows API.
 
-As of the latest version, texture & image loading is done using the [`stb_image.h API`](https://github.com/nothings/stb). 
+As of the latest version, texture & image loading is done using the [`stb_image.h`](https://github.com/nothings/stb) API. 
 
 To use C3D as a standalone API without texture loading:
 
@@ -59,9 +59,9 @@ You will see a menu that allows for many helpers, but these preclude a specific 
 These locations are defined from the relative paths in the macros:
 
 ```C
-#define C3D_REL_SCENES_READ_PATH   
-#define C3D_REL_MODELS_READ_PATH
-#define C3D_MODELS_READ_PATH
+#define C3D_REL_SCENES_READ_PATH   /* ... */
+#define C3D_REL_MODELS_READ_PATH   /* ... */
+#define C3D_MODELS_READ_PATH       /* ... */
 ```
 
 They expect a project structure similar to this:
