@@ -118,6 +118,8 @@ swaptex billboard billboard_alt.png  # Swap texture of `billboard` every frame (
 
 `colorize <meshID> <R> <G> <B>`  A quick method to set the diffuse texture of a mesh to a solid color (experimental).
 
+---
+
 ### Final considerations and results
 
 At the very end, your scene file should look something like this:
