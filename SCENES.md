@@ -92,7 +92,7 @@ rotate planet Y 1                    # Rotate `planet` mesh by 1 degree around Y
 swaptex billboard billboard_alt.png  # Swap texture of `billboard` every frame (this is just an example—really you might want to do it only once or conditionally).
 ```
 
-Current list of all available behavior commands and their syntax:
+---
 
 `rotate <meshName|ALL> <X|Y|Z> <angle>`  Rotates a given mesh (or **ALL** meshes) around the specified axis by `<angle>` degrees each frame (if `[continuous]`).
 
