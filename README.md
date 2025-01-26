@@ -1,11 +1,11 @@
 
 # C3D
 
-**C3D** is a ANSI-C99+ 3D software-renderer pipeline built for the Windows API.
+**C3D** is a C99+ 3D software-renderer pipeline built for the Windows API.
 
 As of the latest version, texture & image loading is done using the [`stb_image.h API`](https://github.com/nothings/stb). 
 
-To use C3D as a standalone API without texture loading, 
+To use C3D as a standalone API without texture loading:
 
 ```C
 #define C3D__NO_STBI
@@ -47,7 +47,7 @@ From the terminal,
 
 **C3D (`c3d.h`) works standalone with STB_IMAGE** as an API well as within its own integrated system.  
 
-The integrated system is included in the header file and is accessible through defining the standard implementation macro,
+The integrated system is included in the header file and is accessible through defining the standard implementation macro:
 
 ```C
 #define C3D_STANDARD
@@ -56,7 +56,7 @@ The integrated system is included in the header file and is accessible through d
 
 You will see a menu that allows for many helpers, but these preclude a specific project structure. You load a scene either from `assets/scenes/*` or a `.obj` folder from `assets/models/*`.
 
-These locations are defined from relative paths in the macros,
+These locations are defined from the relative paths in the macros:
 
 ```C
 #define C3D_REL_SCENES_READ_PATH   
@@ -64,9 +64,7 @@ These locations are defined from relative paths in the macros,
 #define C3D_MODELS_READ_PATH
 ```
 
----
-
-## Project Layout
+They expect a project structure similar to this:
 
 ```
 c3d/
@@ -75,18 +73,13 @@ c3d/
 │  └─ stb_image.h
 ├─ src/
 │  └─ main.c
-├─ assets/
-|  ├─ models/
-│  | ├─ some_model/
-│  | │  ├─ main.obj
-│  | │  └─ diffuse.png
-|  └─ scenes/
-|     └─ myscene
-├─ bin/
-│  └─ c3d.exe
-├─ Makefile
-├─ README.md (this file)
-└─ LICENSE
+└─ assets/
+   ├─ models/
+   | ├─ some_model/
+   | │  ├─ main.obj
+   | │  └─ diffuse.png
+   └─ scenes/
+      └─ myscene
 ```
 
 ---
