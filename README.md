@@ -54,7 +54,7 @@ The integrated system is included in the header file and is accessible through d
 #include "<your_path>/c3d.h" 
 ```
 
-You will see a menu that allows for many helpers, but these preclude a specific project structure. You load a scene either from `assets/scenes/*` or a `.obj` folder from `assets/models/*`.
+You will see a menu that allows for many helpers, but these preclude a specific project structure. You load a scene from `assets/scenes/*` and a `.obj` folder from `assets/models/*`.
 
 These locations are defined from the relative paths in the macros:
 
